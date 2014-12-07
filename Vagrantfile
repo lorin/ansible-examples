@@ -12,4 +12,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     web.vm.box = "ubuntu/trusty64"
     web.vm.network "private_network", ip: "192.168.25.101"
   end
+  config.vm.define "queue" do |queue|
+    queue.vm.box = "ubuntu/trusty64"
+    queue.vm.network "private_network", ip: "192.168.25.102"
+  end
+  config.vm.define "database" do |database|
+    database.vm.box = "ubuntu/trusty64"
+    database.vm.network "private_network", ip: "192.168.25.103"
+  end
 end

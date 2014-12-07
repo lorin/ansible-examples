@@ -1,1 +1,3 @@
 web ansible_ssh_host=192.168.25.101
+queue ansible_ssh_host=192.168.25.102
+database ansible_ssh_host=192.168.25.103
